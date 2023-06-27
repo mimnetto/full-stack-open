@@ -1,0 +1,39 @@
+sequenceDiagram
+    title 0.6: New note in Single page app diagram
+    participant browser
+    participant server
+
+    browser->>server: Post https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: User input in form field  
+    deactivate server
+    
+    Note over browser,server: type="html/text"
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+    Note over browser,server: get HTML for list of exsisting notes
+
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the css file
+    deactivate server
+   
+    Note over browser,server: get styling for classes .container .notes
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
+
+    Note over browser,server: The browser starts executing the JavaScript code that fetches the JSON from the server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [...,99: {content: "hello world", date: "2023-06-27T22:23:48.578Z"}]
+    deactivate server
+
+    Note over browser,server: The browser executes the callback function that renders the new note and all exsisting notes

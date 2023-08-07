@@ -19,4 +19,6 @@ Exercise 0.6: New note in Single page app diagram
 
 Exercises 1.1 - 1.5: course information
 
-Exercises 1.6.-1.14: unicafe 
+Exercises 1.6.-1.11: unicafe 
+
+Exercises 1.12-1.14: anecdotes

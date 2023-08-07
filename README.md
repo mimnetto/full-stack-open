@@ -8,7 +8,9 @@ Course Projects and Exercises for [Full Stack open](https://fullstackopen.com/en
 ### Sequence diagrams made with Mermaid-syntax
 
 Exercise 0.4: New note diagram
+
 Exercise 0.5: Single page app diagram
+
 Exercise 0.6: New note in Single page app diagram
 
 ## Part 1 - Introduction to React
@@ -16,4 +18,5 @@ Exercise 0.6: New note in Single page app diagram
 ### Small Applications made using create-react-app 
 
 Exercises 1.1 - 1.5: course information
+
 Exercises 1.6.-1.14: unicafe 
